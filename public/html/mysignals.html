@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/signals.css">
+        <title>Eco Disasters</title>
+        <link rel="icon" href="/static/eco.png" type="image/png">
+</head>
+<body>
+                
+        <div class="oilcrisis">
+                <ul>
+                        <li><a href="/static/html/homepage.html" >Home</a></li>
+                        <li><a href="/static/html/signals.html?x=0">Signals</a></li>
+                        <li><a href="/static/html/givesignal.html" >Give Signal</a></li>
+                        <li style="float:right"><a href="/static/html/about.html">About</a></li>
+                        
+                        <li style="float:right" >
+                            <img src="/static/unnamed.png" alt=""  >
+                            <ul class="dropdown">
+                                    <li>
+                                            <a href="/static/html/mysignals.html?x=0">My Signals</a>      
+                                    </li>
+                                    <li>
+                                            <a href="/static/html/logout.html"> Log out</a>
+                                    </li>
+                            </ul>
+                    </li> 
+                    </ul>
+                    <p id="name">
+
+                    </p>
+                    <div id="wrapper">
+                    <div id="paper" method="get" action="">
+                    <!--<textarea  id="text" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; " readonly></textarea> --> 
+                   </div>
+                    </div>
+                    <div id="center">
+                    <div id="pagination">
+                                
+                    </div>
+                </div>
+            <script src="/socket.io/socket.io.js">
+                    </script>
+            <script src="/static/js/mysignals.js"></script>
+
+
+        </div>
+</body>
+</html>

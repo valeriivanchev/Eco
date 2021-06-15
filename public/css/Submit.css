@@ -1,0 +1,23 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .chernobyl {
+  
+    background-image: url("/static/chernobil.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+#FirstDisaster{
+    
+    margin: auto;
+    margin-top: 10%;
+     color: white;
+     width: 50%;
+     font-size: 150%;;
+    padding: 10px;
+   
+  }

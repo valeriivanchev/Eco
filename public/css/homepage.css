@@ -1,0 +1,137 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .chernobyl {
+    /* The image used */
+    background-image: url("/static/chernobil.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+#FirstDisaster{
+    
+    margin: auto;
+    margin-top: 5%;
+     background-color: #333;
+     color: white;
+     width: 50%;
+     font-size: 150%;;
+    padding: 10px;
+    /* The image used */
+    background-image: url("/static/chernobil.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #SecondDisaster{
+    
+    margin: auto;
+    margin-top: 5%;
+     background-color: #333;
+     color: white;
+     width: 50%;
+     font-size: 150%;;
+    padding: 10px;
+    /* The image used */
+    background-image: url("/static/hiroshima.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #ThirdDisaster{
+    
+    margin: auto;
+    margin-top: 5%;
+     background-color: #333;
+     color: white;
+     width: 50%;
+     font-size: 150%;;
+    padding: 10px;
+    /* The image used */
+    background-image: url("/static/oilcrisis.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  img{
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+  }
+  li img:hover {
+    background-color: #111;
+    cursor: pointer;
+  }
+
+  ul li ul {
+    background: #333;
+    visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+    position: absolute;
+  transition: all 0.5s ease;
+  display: none;
+}
+
+  ul li:hover > ul,
+  ul li:focus-within > ul, /* this is the line we add */
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  ul li ul li {
+      clear: both;
+    width: 100%;
+  }
+  

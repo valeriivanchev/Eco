@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eco disasters</title>
+    <link rel="stylesheet" href="/static/css/givesignal.css">
+    <link rel="icon" href="/static/eco.png" type="image/png">
+</head>
+<body>
+    <div class="hiroshima">
+            <ul>
+                    <li><a href="/static/html/homepage.html" >Home</a></li>
+                    <li><a href="/static/html/signals.html?x=0">Signals</a></li>
+                    <li><a href="#contact" class="active">Give Signal</a></li>
+                    <li style="float:right"><a href="/static/html/about.html">About</a></li>
+                    
+                    <li style="float:right" >
+                        <img src="/static/unnamed.png" alt=""  >
+                        <ul class="dropdown">
+                                <li>
+                                        <a href="/static/html/mysignals.html?x=0">My Signals</a>      
+                                </li>
+                                <li>
+                                        <a href="/static/html/logout.html"> Log out</a>
+                                </li>
+                        </ul>
+                </li> 
+                </ul>
+                <div id="wrapper">
+
+                        <div id="paper" method="get" action="">
+                    
+                          
+                            <textarea placeholder="Enter something." id="text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; " maxlength="135"></textarea>  
+                            <br>
+                            <input id="button" type="submit" value="Create" onclick="Clicked()">
+                            <script src="/socket.io/socket.io.js">
+                            </script>
+                    <script src="/static/js/givesignal.js"></script>
+                        </div>
+                    
+                    </div> 
+    </div>
+    </body>
+</html>
